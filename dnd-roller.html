@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Hello...</title>
+	<script>
+		function roll()
+		{
+			var standarr = [15,14,13,12,10,8]; // Source stats
+			var outarr = []; // Output file
+			var i; // Holds the location of next stat in outarr
+			
+			i = Math.floor(Math.random() * 6);
+			outarr.push(standarr[i]);
+			standarr.splice(i,1);
+			
+			i = Math.floor(Math.random() * 5);
+			outarr.push(standarr[i]);
+			standarr.splice(i,1);
+			
+			i = Math.floor(Math.random() * 4);
+			outarr.push(standarr[i]);
+			standarr.splice(i,1);
+			
+			i = Math.floor(Math.random() * 3);
+			outarr.push(standarr[i]);
+			standarr.splice(i,1);
+			
+			i = Math.floor(Math.random() * 2);
+			outarr.push(standarr[i]);
+			standarr.splice(i,1);
+			
+			outarr.push(standarr[0]);
+			
+			document.getElementById("str").innerHTML = outarr[0];
+			document.getElementById("dex").innerHTML = outarr[1];
+			document.getElementById("con").innerHTML = outarr[2];
+			document.getElementById("int").innerHTML = outarr[3];
+			document.getElementById("wis").innerHTML = outarr[4];
+			document.getElementById("cha").innerHTML = outarr[5];
+			
+		}
+		
+	</script>
+</head>
+
+<body>
+	<button type="button" onclick="roll()">Roll Stats</button>
+	<table id="stats">
+		<tr>
+			<th colspan=2>
+				Stats
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Strength
+			</td>
+			<td id="str">
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Dexterity
+			</td>
+			<td id="dex">
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Constitution
+			</td>
+			<td id="con">
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Intelligence
+			</td>
+			<td id="int">
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Wisdom
+			</td>
+			<td id="wis">
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Charisma
+			</td>
+			<td id="cha">
+				
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
