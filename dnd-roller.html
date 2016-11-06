@@ -11,6 +11,7 @@
 			var outarr = []; // Output file
 			var i; // Holds the location of next stat in outarr
 			
+			// Randomize outarr
 			i = Math.floor(Math.random() * 6);
 			outarr.push(standarr[i]);
 			standarr.splice(i,1);
@@ -33,19 +34,27 @@
 			
 			outarr.push(standarr[0]);
 			
+			// Write outarr to stats
 			document.getElementById("str").innerHTML = outarr[0];
 			document.getElementById("dex").innerHTML = outarr[1];
 			document.getElementById("con").innerHTML = outarr[2];
 			document.getElementById("int").innerHTML = outarr[3];
 			document.getElementById("wis").innerHTML = outarr[4];
 			document.getElementById("cha").innerHTML = outarr[5];
-			
 		}
-		
 	</script>
 </head>
 
 <body>
+	<table label="navbar">
+		<tr>
+			<th colspan=2>Navigation</th>
+		</tr>
+		<tr>
+			<td><a href="dnd-roller.html">D&D 5e Stat Roller</a></td>
+			<td><a href="about.html">About</a></td>
+		</tr>
+	</table>
 	<button type="button" onclick="roll()">Roll Stats</button>
 	<table id="stats">
 		<tr>
