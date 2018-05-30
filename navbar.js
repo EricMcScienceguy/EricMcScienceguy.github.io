@@ -1,6 +1,5 @@
 function navbar() {
-    var nav = \
-        "<tr>\
+    var nav = "<tr>\
 	        <th colspan=2>Navigation</th>\
 		</tr>\
 		<tr>\
