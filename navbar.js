@@ -10,3 +10,5 @@ function navbar() {
 
     document.getElementByID("navbar").innerHTML = nav;
 }
+
+navbar();
