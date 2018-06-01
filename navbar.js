@@ -8,7 +8,7 @@ function navbar() {
 			<td><a href=\"excellence.html\">Title</a></td>\
 		</tr>";
 
-    Document.getElementByID("navbar").innerHTML = nav;
+    document.getElementById("navbar").innerHTML = nav;
 }
 
 navbar();
