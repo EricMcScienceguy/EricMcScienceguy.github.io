@@ -3,3 +3,7 @@ p {
     size: 50pt;
     color: green;
 }
+
+#navbar {
+    text-align: center;
+}
