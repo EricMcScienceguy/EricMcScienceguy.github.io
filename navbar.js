@@ -10,5 +10,3 @@ function navbar() {
 
     document.getElementById("navbar").innerHTML = "TEST";
 }
-
-navbar();
